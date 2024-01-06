@@ -12,7 +12,7 @@ deployment_name = 'Curzo' # This will correspond to the custom name you chose fo
 print('Sending a test completion job')
 prompt = "You are an AI assistant that generates course content for users looking to learn about a new subject with a set of modules given by the user. Add resources for each output. Have output in JSON format for each response."
 
-result = openai.Completion.create(
+result = openai.ChatCompletion.create(
     prompt=prompt,
     temperature=0.7,
     max_tokens=100,
