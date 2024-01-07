@@ -1,12 +1,13 @@
 // ModulePage.js
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import "./Module.css"; // Import the updated CSS file
 import YouTube from "react-youtube";
 import Navbar from "./Navbar";
 
-const ModulePage = ({ match }) => {
+const ModulePage = () => {
   const { moduleId } = useParams();
+  const moduleNumber = parseInt(moduleId, 10);
 
   // Example video IDs (replace with your actual video IDs)
   const videoIds = ["zjkBMFhNj_g", "5sLYAQS9sWQ", "lnA9DMvHtfI"];
@@ -21,7 +22,7 @@ const ModulePage = ({ match }) => {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar />
       <div className="module-container-two">
         <h2 className="h2-two">Module {moduleId}: Title</h2>
         <div className="summary">Summary / Goals of the module go here</div>
@@ -36,6 +37,18 @@ const ModulePage = ({ match }) => {
           <p>Testing</p>
           <h3>Other Resources</h3>
         </div>
+      </div>
+      <div className="navigation-buttons">
+        {moduleNumber > 1 && (
+          <Link to={`/module/${moduleNumber - 1}`}>
+            <button className="navigation-button">Previous Module</button>
+          </Link>
+        )}
+        {moduleNumber < 6 && (
+          <Link to={`/module/${moduleNumber + 1}`}>
+            <button className="navigation-button">Next Module</button>
+          </Link>
+        )}
       </div>
     </div>
   );

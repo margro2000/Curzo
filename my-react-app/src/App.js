@@ -4,6 +4,8 @@ import ContentPage from "./ContentPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Module from "./Module";
+import Login from "./Login";
+import Signup from "./Signup";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
@@ -30,6 +32,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/module/:moduleId" element={<Module />} />
       </Routes>
     </BrowserRouter>
