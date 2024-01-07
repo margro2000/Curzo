@@ -16,7 +16,7 @@ body {
 }
 @font-face {
   font-family: 'font';
-  src: url('/Users/annieye/Desktop/projects/Curzo/my-react-app/src/font-regular.otf') format('woff2');
+  src: url('/Users/austinho/Desktop/Curzo/my-react-app/src/font-regular.otf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +52,7 @@ h1 {
 input,
 select {
   padding: 12px;
-  width: 300px;
+  width: 350px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
