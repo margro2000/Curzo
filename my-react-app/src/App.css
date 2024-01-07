@@ -9,10 +9,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Change to min-height */
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #f0f0f0, #69a4b6); /* Adjust colors as needed */
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 
 .app-container {
   margin-top: 80px; /* Adjust the margin-top as needed */

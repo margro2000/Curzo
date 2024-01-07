@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="blob">
       <Navbar></Navbar>
       <div className="app-container">
         <h1>Design Your Own Learning, Instantly</h1>
