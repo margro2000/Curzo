@@ -12,6 +12,13 @@ body {
   background: linear-gradient(135deg, #f0f0f0, #69a4b6); /* Adjust colors as needed */
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: 'font', sans-serif;
+}
+@font-face {
+  font-family: 'font';
+  src: url('/Users/annieye/Desktop/projects/Curzo/my-react-app/src/font.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -64,9 +71,14 @@ select {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  font-family: 'font', sans-serif;
+
 }
 
 .submit-button:hover {
   background-color: #0056b3;
 }
 
+button, :placeholder-shown, select{
+  font-family: 'font', sans-serif;
+}
